@@ -41,12 +41,17 @@ typedef struct StateMachine {
  *****/
 StateMachine *create_state_machine (int state_capacity, int transition_capacity) {
   // Allocate memory for state machine struct
+  StateMachine sMachine = malloc(sizeof(StateMachine));
 
   // Current state should default to NULL
+  sMachine->current_state= NULL;
 
   // num_states and num_transitions should default to 0
-
+  sMachine-> num_states=0;
+  sMachine-> num_transitions=0;
   // Allocate memory for states
+  sMachine-> state_capacity= state_capacity;
+  sMachine-> states
 
   // Allocate memory for transitions
 
